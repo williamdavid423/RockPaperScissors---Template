@@ -25,16 +25,20 @@ namespace RockPaperScissors
         int ties = 0;
 
         Random randGen = new Random();
+
         SoundPlayer jabPlayer = new SoundPlayer(Properties.Resources.jabSound);
         SoundPlayer gongPlayer = new SoundPlayer(Properties.Resources.gong);
+
         Image rockImage = Properties.Resources.rock168x280;
         Image paperImage = Properties.Resources.paper168x280;
         Image scissorImage = Properties.Resources.scissors168x280;
         Image winImage = Properties.Resources.winTrans;
         Image loseImage = Properties.Resources.loseTrans;
         Image tieImage = Properties.Resources.tieTrans;
+
         Point playerLocation = new Point(168, 70);
         Point cpuLocation = new Point(360, 70);
+
         Graphics g;
 
         public Form1()
