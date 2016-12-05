@@ -10,6 +10,11 @@ using System.Windows.Forms;
 using System.Media;
 using System.Threading;
 
+/// <summary>
+/// A rock, paper, scissors game that utilizes basic methods
+/// for repetitive tasks.
+/// </summary>
+
 namespace RockPaperScissors
 {
     public partial class Form1 : Form
