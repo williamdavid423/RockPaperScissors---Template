@@ -108,9 +108,6 @@
     <None Include="Resources\gong.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\winTrans.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\youWin.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tieTrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winTrans.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

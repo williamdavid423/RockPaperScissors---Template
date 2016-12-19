@@ -23,6 +23,8 @@ namespace RockPaperScissors
         int wins = 0;
         int losses = 0;
         int ties = 0;
+        int choicePause = 1000;
+        int outcomePause = 3000;
 
         Random randGen = new Random();
 
@@ -38,6 +40,8 @@ namespace RockPaperScissors
 
         Point playerLocation = new Point(168, 70);
         Point cpuLocation = new Point(360, 70);
+        Point outcomeLocation = new Point(225, 5);
+
 
         Graphics g;
 
