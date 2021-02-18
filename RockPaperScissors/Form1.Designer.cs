@@ -37,6 +37,12 @@
             this.winsLabel = new System.Windows.Forms.Label();
             this.lossesLabel = new System.Windows.Forms.Label();
             this.tiesLabel = new System.Windows.Forms.Label();
+            this.cpuImage = new System.Windows.Forms.PictureBox();
+            this.playerImage = new System.Windows.Forms.PictureBox();
+            this.resultImage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.cpuImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultImage)).BeginInit();
             this.SuspendLayout();
             // 
             // chooseLabel
@@ -92,7 +98,7 @@
             this.scoreLabel.BackColor = System.Drawing.Color.DarkRed;
             this.scoreLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scoreLabel.ForeColor = System.Drawing.Color.White;
-            this.scoreLabel.Location = new System.Drawing.Point(569, 0);
+            this.scoreLabel.Location = new System.Drawing.Point(709, 0);
             this.scoreLabel.Name = "scoreLabel";
             this.scoreLabel.Size = new System.Drawing.Size(107, 98);
             this.scoreLabel.TabIndex = 6;
@@ -104,7 +110,7 @@
             this.winsLabel.BackColor = System.Drawing.Color.DarkRed;
             this.winsLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.winsLabel.ForeColor = System.Drawing.Color.White;
-            this.winsLabel.Location = new System.Drawing.Point(569, 127);
+            this.winsLabel.Location = new System.Drawing.Point(709, 127);
             this.winsLabel.Name = "winsLabel";
             this.winsLabel.Size = new System.Drawing.Size(107, 51);
             this.winsLabel.TabIndex = 7;
@@ -116,7 +122,7 @@
             this.lossesLabel.BackColor = System.Drawing.Color.DarkRed;
             this.lossesLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lossesLabel.ForeColor = System.Drawing.Color.White;
-            this.lossesLabel.Location = new System.Drawing.Point(569, 198);
+            this.lossesLabel.Location = new System.Drawing.Point(709, 198);
             this.lossesLabel.Name = "lossesLabel";
             this.lossesLabel.Size = new System.Drawing.Size(107, 51);
             this.lossesLabel.TabIndex = 8;
@@ -128,19 +134,52 @@
             this.tiesLabel.BackColor = System.Drawing.Color.DarkRed;
             this.tiesLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tiesLabel.ForeColor = System.Drawing.Color.White;
-            this.tiesLabel.Location = new System.Drawing.Point(569, 268);
+            this.tiesLabel.Location = new System.Drawing.Point(709, 268);
             this.tiesLabel.Name = "tiesLabel";
             this.tiesLabel.Size = new System.Drawing.Size(107, 51);
             this.tiesLabel.TabIndex = 9;
             this.tiesLabel.Text = "Ties: 0";
             this.tiesLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
+            // cpuImage
+            // 
+            this.cpuImage.BackColor = System.Drawing.Color.Transparent;
+            this.cpuImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.cpuImage.Location = new System.Drawing.Point(513, 35);
+            this.cpuImage.Name = "cpuImage";
+            this.cpuImage.Size = new System.Drawing.Size(172, 281);
+            this.cpuImage.TabIndex = 14;
+            this.cpuImage.TabStop = false;
+            // 
+            // playerImage
+            // 
+            this.playerImage.BackColor = System.Drawing.Color.Transparent;
+            this.playerImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.playerImage.Location = new System.Drawing.Point(144, 35);
+            this.playerImage.Name = "playerImage";
+            this.playerImage.Size = new System.Drawing.Size(172, 281);
+            this.playerImage.TabIndex = 13;
+            this.playerImage.TabStop = false;
+            // 
+            // resultImage
+            // 
+            this.resultImage.BackColor = System.Drawing.Color.Transparent;
+            this.resultImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.resultImage.Location = new System.Drawing.Point(323, 103);
+            this.resultImage.Name = "resultImage";
+            this.resultImage.Size = new System.Drawing.Size(183, 143);
+            this.resultImage.TabIndex = 15;
+            this.resultImage.TabStop = false;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = global::RockPaperScissors.Properties.Resources.dojo700x390;
-            this.ClientSize = new System.Drawing.Size(684, 351);
+            this.ClientSize = new System.Drawing.Size(828, 351);
+            this.Controls.Add(this.cpuImage);
+            this.Controls.Add(this.playerImage);
+            this.Controls.Add(this.resultImage);
             this.Controls.Add(this.tiesLabel);
             this.Controls.Add(this.lossesLabel);
             this.Controls.Add(this.winsLabel);
@@ -152,6 +191,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Rock Paper Scissors";
+            ((System.ComponentModel.ISupportInitialize)(this.cpuImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -166,6 +208,9 @@
         private System.Windows.Forms.Label winsLabel;
         private System.Windows.Forms.Label lossesLabel;
         private System.Windows.Forms.Label tiesLabel;
+        private System.Windows.Forms.PictureBox cpuImage;
+        private System.Windows.Forms.PictureBox playerImage;
+        private System.Windows.Forms.PictureBox resultImage;
     }
 }
 

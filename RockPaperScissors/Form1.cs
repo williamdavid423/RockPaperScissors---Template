@@ -20,6 +20,7 @@ namespace RockPaperScissors
     public partial class Form1 : Form
     {
         string playerChoice, cpuChoice;
+
         int wins = 0;
         int losses = 0;
         int ties = 0;
@@ -38,22 +39,14 @@ namespace RockPaperScissors
         Image loseImage = Properties.Resources.loseTrans;
         Image tieImage = Properties.Resources.tieTrans;
 
-        Point playerLocation = new Point(168, 70);
-        Point cpuLocation = new Point(360, 70);
-        Point outcomeLocation = new Point(225, 5);
-
-
-        Graphics g;
-
         public Form1()
         {
             InitializeComponent();
-            g = this.CreateGraphics();
         }
 
         private void rockButton_Click(object sender, EventArgs e)
         {
-            /// TODO Set the playerchoice value, draw the appropriate image,
+            /// TODO Set the playerchoice value, show the appropriate image,
             /// play a sound, wait for a second; repeat for the computer turn 
         }
 
